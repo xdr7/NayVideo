@@ -5,10 +5,10 @@ session_start();
 define('DB_HOST', 'localhost');
 define('DB_NAME', 'naysvideo');
 define('DB_USER', 'root');
-define('DB_PASS', '@73kjpasmaul');
+define('DB_PASS', '');
 
 // Base URL
-define('BASE_URL', 'http://192.168.35.50:7777/naysvideo/');
+define('BASE_URL', 'http://localhost/naysvideo/');
 
 // Create Connection
 try {
@@ -54,4 +54,5 @@ function uploadFile($file, $type)
     move_uploaded_file($file['tmp_name'], $dir . $filename);
     return $filename;
 }
+
 ?>
